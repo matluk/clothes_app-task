@@ -1,0 +1,17 @@
+.expanded {
+  transition: transform 0.5s ease-in-out !important;
+  transform: rotate(-180deg);
+}
+
+.close {
+  transition: transform 0.5s ease-in-out !important;
+  transform: rotate(0deg);
+}
+
+.checkboxHover {
+    color: black;
+  }
+
+.checkboxHover:hover {
+    color: rgb(253, 1, 143);
+  }

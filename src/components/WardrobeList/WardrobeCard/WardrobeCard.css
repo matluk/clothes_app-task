@@ -1,0 +1,11 @@
+.zumshop {
+  color: black;
+  font-weight: 700;
+  text-decoration: none;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.zumshop:hover {
+  color: rgb(253, 1, 143) !important;
+}
