@@ -1,4 +1,4 @@
-export const colors = [
+/* export const colors = [
   { label: "beige", value: "beige" },
   { label: "blau", value: "blau" },
   { label: "braun", value: "braun" },
@@ -19,7 +19,7 @@ export const colors = [
   { label: "silber", value: "silber" },
   { label: "turkis", value: "turkis" },
   { label: "weiß", value: "weiß" },
-];
+]; */
 
 export const createFilterByColors = (selectedColors) => {
   return (item) => {
