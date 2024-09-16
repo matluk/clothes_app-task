@@ -17,7 +17,21 @@ export const ColorProvider = ({ children }) => {
   const [visibleItems, setVisibleItems] = useState(data)
   const [finalVisibleItems, setFinalVisibleItems] = useState(visibleItems);
 
+  const [colors, setColors] = useState([]);
+
   const [detailsItem, setDetailsItem] = useState(null);
+
+
+  useEffect(() => {
+    const uniqueColors = new Set();
+
+    data.forEach(item => {
+      if(item.Details && item.Details.Color){
+        uniqueColors.add(item.Details.Color) 
+      }
+    });
+    setColors([...uniqueColors].map(color => ({ label:color, value: color})));
+  }, [data]);
 
 
   const addColor = (color) => {
@@ -110,7 +124,8 @@ export const ColorProvider = ({ children }) => {
         showArrowUp,
         setShowArrowUp,
         showConfirmButton,
-        setShowConfirmButton
+        setShowConfirmButton,
+        colors
       }}
     >
       {children}

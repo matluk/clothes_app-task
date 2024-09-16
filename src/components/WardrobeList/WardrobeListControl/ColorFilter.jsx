@@ -2,7 +2,6 @@ import React from "react";
 import { Checkbox, FormControlLabel, Menu, MenuItem, Box } from "@mui/material";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import "./ColorFIlter.css";
-import { colors } from "../../../utils/clothes";
 import { useColorContext } from "../../../utils/context/context";
 
 const ColorPicker = () => {
@@ -20,7 +19,8 @@ const ColorPicker = () => {
     showArrowUp,
     setShowArrowUp,
     showConfirmButton,
-    setShowConfirmButton
+    setShowConfirmButton,
+    colors
   } = useColorContext();
 
   const handleClick = (event) => {
